@@ -2,48 +2,7 @@
 ## 🔁 Циклы и базовые алгоритмы на C#
 
 ```csharp
-// 💻 Программирование корпоративных систем — Рабочая тетрадь №2
-// 🔁 Циклы и базовые алгоритмы на C#
 
-using System;
-
-class Program
-{
-    static void Main()
-    {
-        Console.WriteLine("===============================");
-        Console.WriteLine("   Рабочая тетрадь №2 — Меню   ");
-        Console.WriteLine("===============================");
-        Console.WriteLine("1. Ряды (Ряд Маклорена)");
-        Console.WriteLine("2. Счастливый билет");
-        Console.WriteLine("3. Сокращение дроби");
-        Console.WriteLine("4. Угадай число");
-        Console.WriteLine("5. Кофейный аппарат");
-        Console.WriteLine("6. Лабораторный опыт");
-        Console.WriteLine("7. Колонизация Марса");
-        Console.WriteLine("===============================");
-        Console.Write("Выберите задание (1–7): ");
-
-        if (!int.TryParse(Console.ReadLine(), out int task))
-        {
-            Console.WriteLine("Ошибка: нужно ввести число от 1 до 7.");
-            return;
-        }
-
-        Console.Clear();
-
-        switch (task)
-        {
-            case 1: Task1(); break;
-            case 2: Task2(); break;
-            case 3: Task3(); break;
-            case 4: Task4(); break;
-            case 5: Task5(); break;
-            case 6: Task6(); break;
-            case 7: Task7(); break;
-            default: Console.WriteLine("Неверный номер задания."); break;
-        }
-    }
 
     // 🧮 Задание 1 — Ряды (разложение функции через ряд Маклорена)
     static void Task1()
